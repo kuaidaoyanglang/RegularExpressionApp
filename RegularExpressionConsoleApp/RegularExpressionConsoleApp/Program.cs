@@ -11,7 +11,7 @@ namespace RegularExpressionConsoleApp
     {
         static void Main(string[] args)
         {
-            MatchCollection matches = Regex.Matches("大家好，我是Hebe，我22岁了，身高180，我们团队有3个女女！", @"大家|我是|HE|女女|扑街|去死",RegexOptions.IgnoreCase);
+            MatchCollection matches = Regex.Matches("大家好，我是Hebe，HE，我22岁了，身高180，我们团队有3个女女！", @"大家|我是|HE|女女|扑街|去死",RegexOptions.IgnoreCase);
 
             foreach (Match match in matches)
             {
